@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'pixel';
-  src: url('pixel.ttf') format('truetype');
+  src: url('pixel.TTF') format('truetype');
 }
 /*how i include downloadable fonts in css*/
 
