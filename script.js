@@ -26,6 +26,7 @@ listOfDie.forEach((btn)=>{
 });            
               
 function showModal(){
+listOfDie.forEach(btn => btn.disabled = true); 
   modal.style.display="flex";
 playAgain.onclick=()=>{
   reset();
@@ -111,19 +112,7 @@ player.addEventListener('click',()=>{
   });
   current="X";
 });
-/*if (win()) {
-          if (whoWins === "\u274C") {
-            result.textContent = "Player Wins";
-            return;
-          } else if (whoWins === "\u{2B55}") {
-            result.textContent = "Computer wins";
-            return;
-          }
-        } else if (draw()) {
-          result.textContent = "Draw";
-          return;
-        }*/
-//btn.textContent=current==="X"?"\u274C":"\u{2B55}";
+
 function computerTurn(){
   var x=Math.floor(Math.random()*9);
   if(listOfDie[x].textContent==="")
@@ -154,6 +143,7 @@ setTimeout(() => reset(), 5000);
 
 function reset(){
   listOfDie.forEach((btn)=>{
+    btn.disabled=false;
     btn.textContent="";
   });
   result.textContent="";
