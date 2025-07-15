@@ -74,9 +74,10 @@ h1{
   gap:0.0625em;
   align-content:space-evenly;
   flex-wrap:wrap;
-  
-  height:400px;
-  width:400px;
+  max-height:400px;
+  max-width:400px;
+  height:90vw;
+  width:90vw;
   background-color:#2c4a7a;
 }
 button{
@@ -89,12 +90,14 @@ button{
    color:#b1d4e0;
 }
 .btn{
-  width:100px;
-  height:100px;
+  max-width:100px;
+  max-height:100px;
+  height:30%;
+  width:30%;
   border:none;
   background-color: #b1d4e0;
   border-radius:25px;
   display:flex;
   justify-content:center;
   align-items:center;
-  font-size:75px;}
+  font-size:8vw;}
